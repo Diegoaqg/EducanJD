@@ -142,6 +142,7 @@
   border: 2px solid red !important;
 }
 
+<<<<<<< HEAD
 .educacion-cachorros {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
               url('fondo-cachorros.jpg') no-repeat center center/cover;
@@ -149,5 +150,192 @@
 }
 
 .fondo-translucido {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);}
+=======
+
+
+/*estilos del admin*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-image: url('assets/Neo.jpg');
+  background-size: cover;       /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+}
+
+
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: #cedcd9b4;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar h2 {
+  font-size: 28px;
+  margin-bottom: 32px;
+  font-weight: bold;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar a {
+  color: #000000;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar a:hover {
+  background-color: #5e3131c1;
+  transform: scale(1.05);
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+  animation: slideIn 0.6s ease-in-out;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header img { /*pendiente*/
+  border-radius: 50%;
+  border: 3px solid #ff914d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.card { /* cajones*/
+  background: #ebd1b2;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 4px 4px 0 #ebd1b2;
+  border: 2px dashed #ebd1b2;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: rotate(-1deg) scale(1.03);
+}
+
+.card h3 { /*Letras titulos de cajones*/
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card p { /*Letras de cajones*/
+  font-size: 17px;
+  color: #ffffff;
+}
+
+/* Forms */
+form {
+  background: #ebd1b2;
+  padding: 28px;
+  border-radius: 20px;
+  border: 3px dotted #ebd1b2;
+  box-shadow: 0 6px 12px rgba(255, 144, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #4a3f35;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border: 2px solid #ffd699;
+  border-radius: 14px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #ebd1b2;
+  outline: none;
+}
+
+form button {
+  background-color: #4e4438;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form button:hover {
+  background-color: #703d03;
+  transform: scale(1.05);
+>>>>>>> 12e8b87 (Admin Juliana)
 }
