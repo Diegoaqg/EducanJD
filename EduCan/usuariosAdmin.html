@@ -3,70 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin - Adiestramiento Canino</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="stilos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <title>Usuarios - Admin EduCan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="stilos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body>
+<body class="usuariosA">
   
   <div class="sidebar">
-    <h2><i class="bi bi-shield-shaded"></i> Admin EduCan</h2>
+    <img src="assets/EDUCÁN (3).png" alt="Logo EduCan" style="height:200px; margin-right:10px; border-radius: 0px;">
+  <h2>
+  Admin EduCan
+</h2>
     <a href="inicioAdmin.html"><i class="bi bi-speedometer2"></i> Dashboard</a>
-    <a href="usuarios.html"><i class="bi bi-people-fill"></i> Usuarios</a>
-    <a href="#"><i class="bi bi-kanban-fill"></i> Servicios</a>
-    <a href="#"><i class="bi bi-bag-fill"></i> Productos</a>
-    <a href="#"><i class="bi bi-envelope-fill"></i> Contactos</a>
-    <a href="#"><i class="bi bi-journal-text"></i> Blog</a>
-    <a href="#"><i class="bi bi-gear-fill"></i> Configuración</a>
-    <a href="#"><i class="bi bi-shield-lock-fill"></i> Seguridad</a>
-    <a href="#"><i class="bi bi-box-arrow-right"></i> Salir</a>
+    <a href="usuariosAdmin.html"><i class="bi bi-people"></i> Usuarios</a>
+    <a href="serviciosAdmin.html"><i class="bi bi-list-check"></i> Servicios</a>
+    <a href="productos Admin.html"><i class="bi bi-bag"></i> Productos</a>
+    <a href="contactosAdmin.html"><i class="bi bi-envelope"></i> Contactos</a>
+    <a href="blogAdmin.html"><i class="bi bi-journal-text"></i> Blog</a>
+    <a href="confiAdmin.html"><i class="bi bi-gear"></i> Configuración</a>
+    <a href="seguridadAdmin.html"><i class="bi bi-shield-lock"></i> Seguridad</a>
+    <a href="index.html"><i class="bi bi-box-arrow-right"></i> Salir</a>
   </div>
 
   <div class="main">
     <div class="header">
-      <h1>¡Bienvenido! <i class="bi bi-paw-fill"></i></h1>
+      <h1><i class="bi bi-people-fill"></i> Panel de Usuarios</h1>
     </div>
 
     <div class="cards">
       <div class="card">
-        <h3><i class="bi bi-person-bounding-box"></i> Usuarios</h3>
-        <p>125 registrados</p>
+        <h3><i class="bi bi-person-check-fill"></i> Activos</h3>
+        <p>105 usuarios</p>
       </div>
       <div class="card">
-        <h3><i class="bi bi-calendar-check-fill"></i> Servicios</h3>
-        <p>32 citas esta semana</p>
-      </div>
-      <div class="card">
-        <h3><i class="bi bi-currency-dollar"></i> Ventas</h3>
-        <p>$1.450 este mes</p>
+        <h3><i class="bi bi-person-x-fill"></i> Inactivos</h3>
+        <p>20 usuarios</p>
       </div>
     </div>
 
     <form>
-      <h2><i class="bi bi-cart-plus-fill"></i> Agregar Producto</h2>
-      <input type="text" placeholder="Nombre del producto" required />
-      <input type="number" placeholder="Precio" required />
-      <input type="number" placeholder="Stock disponible" required />
-      <textarea placeholder="Descripción del producto"></textarea>
+      <h2><i class="bi bi-person-plus-fill"></i> Registrar nuevo usuario</h2>
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <input type="password" placeholder="Contraseña" required />
       <select>
-        <option value="aseo">Aseo</option>
-        <option value="juguetes">Juguetes</option>
-        <option value="alimentos">Alimentos</option>
+        <option value="admin">Administrador</option>
+        <option value="cliente">Cliente</option>
       </select>
-      <input type="file" />
-      <button type="submit"><i class="bi bi-save2-fill"></i> Guardar producto</button>
+      <button type="submit"><i class="bi bi-save2-fill"></i> Crear usuario</button>
     </form>
 
     <form>
-      <h2><i class="bi bi-journal-plus"></i> Crear Servicio</h2>
-      <input type="text" placeholder="Nombre del servicio" required />
-      <textarea placeholder="Descripción detallada"></textarea>
-      <input type="number" placeholder="Duración (Horas)" required />
-      <input type="number" placeholder="Precio por hora" required />
-      <button type="submit"><i class="bi bi-plus-circle-fill"></i> Agregar servicio</button>
+      <h2><i class="bi bi-search"></i> Buscar usuario</h2>
+      <input type="text" placeholder="Nombre o correo" />
+      <button type="submit"><i class="bi bi-search"></i> Buscar</button>
     </form>
   </div>
-  
+
 </body>
 </html>

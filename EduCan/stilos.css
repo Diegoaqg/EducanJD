@@ -9,7 +9,7 @@
 }
 
 .serviciosPrimera {
-  width: 100vw; /* 100% del ancho de la ventana */
+  width: 100%; /* 100% del ancho de la ventana */
   overflow: hidden; /* Para que no salga nada fuera */
   position: relative;
   margin-bottom: 2rem;
@@ -142,7 +142,7 @@
   border: 2px solid red !important;
 }
 
-<<<<<<< HEAD
+HEAD
 .educacion-cachorros {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
               url('fondo-cachorros.jpg') no-repeat center center/cover;
@@ -151,10 +151,11 @@
 
 .fondo-translucido {
   background-color: rgba(0, 0, 0, 0.5);}
-=======
+
 
 
 /*estilos del admin*/
+/* Reset general */
 * {
   margin: 0;
   padding: 0;
@@ -165,13 +166,20 @@ body {
   font-family: 'Fredoka', sans-serif;
   display: flex;
   min-height: 100vh;
-  background-image: url('assets/Neo.jpg');
-  background-size: cover;       /* Ajusta la imagen al tamaño del contenedor */
-  background-position: center;  /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que se repita */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
+/* Backgrounds por sección */
+body.usuariosA { background-image: url('assets/lobo.jpg'); }
+body.serviciosA { background-image: url('assets/PerroBlanco.jpg'); }
+body.productosA { background-image: url('assets/Pitbull.jpg'); }
+body.contactosA { background-image: url('assets/Wendy.jpg'); }
+body.blogA { background-image: url('assets/Alpha.jpg'); }
+body.configuracionA { background-image: url('assets/Athena.jpg'); }
+body.seguridadA { background-image: url('assets/collie.jpg'); }
+body.inicioA { background-image: url('assets/perronegro.jpg'); }
 
 /* Sidebar */
 .sidebar {
@@ -209,7 +217,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Main content */
+/* Main */
 .main {
   flex: 1;
   padding: 32px;
@@ -217,7 +225,7 @@ body {
   animation: slideIn 0.6s ease-in-out;
 }
 
-/* Animation */
+/* Animación */
 @keyframes slideIn {
   from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
@@ -240,9 +248,9 @@ body {
   gap: 10px;
 }
 
-.header img { /*pendiente*/
+.header img {
   border-radius: 50%;
-  border: 3px solid #ff914d;
+  border: 3px solid #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -254,11 +262,11 @@ body {
   margin-bottom: 40px;
 }
 
-.card { /* cajones*/
-  background: #ebd1b2;
+.card {
+  background: #6585b4a6;
   padding: 24px;
   border-radius: 18px;
-  box-shadow: 4px 4px 0 #ebd1b2;
+  box-shadow: 4px 4px 0 #cedcd9;
   border: 2px dashed #ebd1b2;
   transition: transform 0.4s ease;
 }
@@ -267,7 +275,7 @@ body {
   transform: rotate(-1deg) scale(1.03);
 }
 
-.card h3 { /*Letras titulos de cajones*/
+.card h3 {
   font-size: 20px;
   margin-bottom: 8px;
   color: #ffffff;
@@ -276,25 +284,25 @@ body {
   gap: 10px;
 }
 
-.card p { /*Letras de cajones*/
+.card p {
   font-size: 17px;
   color: #ffffff;
 }
 
 /* Forms */
 form {
-  background: #ebd1b2;
+  background: #6585b4a6;
   padding: 28px;
   border-radius: 20px;
   border: 3px dotted #ebd1b2;
-  box-shadow: 0 6px 12px rgba(255, 144, 0, 0.1);
+  box-shadow: 0 6px 12px #cedcd9;
   margin-bottom: 40px;
 }
 
 form h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #4a3f35;
+  color: #ffffff;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -306,7 +314,7 @@ form select {
   width: 100%;
   padding: 14px;
   margin-bottom: 16px;
-  border: 2px solid #ffd699;
+  border: 2px solid #5e3131; /* borde del campo*/
   border-radius: 14px;
   font-size: 16px;
   transition: all 0.3s;
@@ -315,15 +323,15 @@ form select {
 form input:focus,
 form textarea:focus,
 form select:focus {
-  border-color: #ebd1b2;
+  border-color: #cedcd9;  /* borde al pararse en el campo*/
   outline: none;
 }
 
 form button {
-  background-color: #4e4438;
+  background-color: #6585b4;
   color: white;
   padding: 14px 28px;
-  border: none;
+  border: 1px solid #000000; ;
   border-radius: 14px;
   font-size: 17px;
   font-weight: 600;
@@ -335,7 +343,61 @@ form button {
 }
 
 form button:hover {
-  background-color: #703d03;
+  background-color: #cedcd9;
   transform: scale(1.05);
->>>>>>> 12e8b87 (Admin Juliana)
+}
+
+/* Seguridad avanzada */
+.opciones-seguridad {
+  background: #6585b4a6;
+  padding: 24px;
+  border-radius: 18px;
+  border: 2px dashed #ebd1b2;
+  box-shadow: 0 4px 8px #cedcd9dc;
+  margin-bottom: 32px;
+}
+
+.opciones-seguridad h3 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.opciones-seguridad ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.opciones-seguridad li {
+  font-size: 17px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Alertas y feedback */
+.alerta {
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #fff3cd;
+  color: #ffffff;
+  border: 1px solid #ffeeba;
+  margin-bottom: 20px;
+}
+
+.alerta.success {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.alerta.error {
+  background-color: #f8d7da;
+  color: #5e3131;
+  border-color: #f5c6cb;
 }
