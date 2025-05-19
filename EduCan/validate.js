@@ -14,3 +14,31 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     alert('Usuario o contraseña incorrectos');
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const registerForm = document.getElementById('registerForm');
+
+  if (registerForm) {
+    registerForm.addEventListener('submit', function (e) {
+      e.preventDefault(); // evita que el formulario se envíe
+
+      const correo = document.getElementById('registerEmail').value.trim();
+      const pass = document.getElementById('registerPassword').value.trim();
+      const passConfirm = document.getElementById('registerPasswordConfirm').value.trim();
+
+      // Validación falsa: solo simula que se valida
+      if (correo && pass && passConfirm) {
+        if (pass === passConfirm) {
+          alert('¡Registro exitoso! (Simulado)');
+          const modal = bootstrap.Modal.getInstance(document.getElementById('registerModal'));
+          modal.hide();
+        } else {
+          alert('Las contraseñas no coinciden.');
+        }
+      } else {
+        alert('Completa todos los campos.');
+      }
+    });
+  }
+});
+
