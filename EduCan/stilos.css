@@ -7,23 +7,30 @@
   display: block;
   object-fit: cover;
 }
+
+.serviciosPrimera {
+  width: 100vw; /* 100% del ancho de la ventana */
+  overflow: hidden; /* Para que no salga nada fuera */
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.serviciosPrimera img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 .neo-background {
   /*background-image: url('assets/NEO.jpg');*/
-  background-color: rgb(251, 255, 245);
+  background-color: rgb(255, 255, 255);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 20px 0;
 }
 
-/* Opcional: fondo semi-transparente para mejorar legibilidad del contenido sobre Neo */
-/*.neo-background > * {
-  background-color: rgba(255, 0, 0, 0.404);
-  margin: 20px auto;
-  max-width: 1200px;
-  border-radius: 8px;
-  padding: 20px;
-}
 
 /* Hero texto blanco con overlay semitransparente */
 .hero {
@@ -87,7 +94,7 @@
 }
 
 .columna-izquierda {
-  background-color: rgba(255, 255, 255, 0.637); /* fondo negro semitransparente */
+  background-color: rgba(255, 255, 255, 0); /* fondo negro semitransparente */
   color: rgb(0, 0, 0);
   padding: 20px;
   border-radius: 8px;
@@ -95,7 +102,7 @@
 
 .columna-derecha {
   /* Si quieres modificar el color del fondo derecho también */
-  background-color: rgba(255, 255, 255, 0.637);
+  background-color: rgba(255, 255, 255, 0);
   color:black;/* blanco casi opaco */
   padding: 20px;
   border-radius: 8px;
@@ -133,4 +140,14 @@
 
 .is-invalid {
   border: 2px solid red !important;
+}
+
+.educacion-cachorros {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('fondo-cachorros.jpg') no-repeat center center/cover;
+  min-height: 80vh;
+}
+
+.fondo-translucido {
+  background-color: rgba(0, 0, 0, 0.5);
 }

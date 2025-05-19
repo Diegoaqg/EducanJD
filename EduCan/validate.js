@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   // Validación falsa: usuario y contraseña específicos
   if (email === 'admin@educan.com' && password === '1234') {
     // Redirigir al panel de administrador
-    window.location.href = 'admin.html'; // Cambia por la ruta correcta si quieres
+    window.location.href = 'inicioAdmin.html'; // Cambia por la ruta correcta si quieres
   } else {
     alert('Usuario o contraseña incorrectos');
   }
