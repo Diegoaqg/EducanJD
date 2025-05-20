@@ -162,7 +162,8 @@ HEAD
   box-sizing: border-box;
 }
 
-body {
+body.usuariosA  {
+  background-image: url('assets/lobo.jpg');
   font-family: 'Fredoka', sans-serif;
   display: flex;
   min-height: 100vh;
@@ -171,15 +172,74 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Backgrounds por sección */
-body.usuariosA { background-image: url('assets/lobo.jpg'); }
-body.serviciosA { background-image: url('assets/PerroBlanco.jpg'); }
-body.productosA { background-image: url('assets/Pitbull.jpg'); }
-body.contactosA { background-image: url('assets/Wendy.jpg'); }
-body.blogA { background-image: url('assets/Alpha.jpg'); }
-body.configuracionA { background-image: url('assets/Athena.jpg'); }
-body.seguridadA { background-image: url('assets/collie.jpg'); }
-body.inicioA { background-image: url('assets/perronegro.jpg'); }
+body.serviciosA   {
+  background-image: url('assets/PerroBlanco.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.productosA  {
+  background-image: url('assets/Pitbull.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.contactosA  {
+  background-image: url('assets/Wendy.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.blogA   {
+  background-image: url('assets/Alpha.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.configuracionA  {
+  background-image: url('assets/Athena.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.seguridadA { 
+  background-image: url('assets/collie.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  
+body.inicioA {
+   background-image: url('assets/perronegro.jpg');
+   font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
 
 /* Sidebar */
 .sidebar {
