@@ -1,12 +1,7 @@
 .navbar {
-  background-color: #80808099; /* gris con 60% de transparencia */
-  backdrop-filter: blur(5px); /* efecto difuminado elegante */
+  background-color: #80808099;
+  backdrop-filter: blur(5px); 
 }
-
-
-
-
-
 
 .boton-consulta {
   background-color: #c36909;
@@ -16,18 +11,16 @@
   border-radius: 8px;
   transition: background-color 0.3s ease;
 }
+
 .boton-consulta:hover {
   background-color: #ebd1b2;
   color: rgb(0, 0, 0);
 }
 
-
 .consulta-banner {
   margin-top: 28px;
 }
 
-
-/* Imagen MAX ocupa todo ancho */
 .max-image-container img {
   width: 100%;
   height: 95vh;
@@ -36,8 +29,8 @@
 }
 
 .serviciosPrimera {
-  width: 100%; /* 100% del ancho de la ventana */
-  overflow: hidden; /* Para que no salga nada fuera */
+  width: 100%;
+  overflow: hidden;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -48,8 +41,6 @@
   display: block;
 }
 
-
-/* Hero texto blanco con overlay semitransparente */
 .hero {
   color: rgba(255, 255, 255, 0);
   position: relative;
@@ -62,16 +53,14 @@
   color: white;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
   padding: 20px;
-  background: rgba(0, 0, 0, 0.3); /* Para que resalte más sobre la imagen */
+  background: rgba(0, 0, 0, 0.3);
   width: 100%;
 }
 
-/* Fondo general */
 .info-section {
   background-color: #f8f9fa00;
 }
 
-/* Caja principal que contiene ambos bloques */
 .main-box {
   background-color: #ebd1b2dc;
   border: 2px solid #ebd1b2;
@@ -82,13 +71,11 @@
   gap: 20px;
 }
 
-/* IZQUIERDA: texto largo */
 .text-content {
   flex: 1 1 60%;
   min-width: 300px;
 }
 
-/* DERECHA: caja destacada */
 .inner-box {
   flex: 1 1 35%;
   min-width: 260px;
@@ -97,7 +84,6 @@
   color: #000000;
 }
 
-/* Títulos y párrafos */
 .text-content h3 {
   color: #000000;
 }
@@ -114,7 +100,6 @@
   padding-left: 20px;
 }
 
-/*carrusel de fotos*/
 .carousel-container {
   background-color: #fdfdfd6b;
   border-radius: 20px;
@@ -126,7 +111,7 @@
 
 .carousel-inner img {
   border-radius: 20px;
-  max-height: 400px;
+  max-height: 450px;
   object-fit: cover;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -136,22 +121,14 @@
   transform: scale(1.03);
 }
 
-
-.carousel-inner img {
-  border-radius: 20px;
-  max-height: 450px;
-  object-fit: cover;
-}
-
-
 .carousel-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0); /* Negro transparente para el overlay */
-  pointer-events: none; /* Para que no interfiera con los clicks en el carousel */
+  background: rgb(0, 0, 0);
+  pointer-events: none;
   z-index: 1;
 }
 
@@ -164,22 +141,21 @@
 }
 
 .columna-izquierda {
-  background-color: rgba(255, 255, 255, 0); /* fondo negro semitransparente */
+  background-color: rgba(255, 255, 255, 0);
   color: rgb(0, 0, 0);
   padding: 20px;
   border-radius: 8px;
 }
 
 .columna-derecha {
-  /* Si quieres modificar el color del fondo derecho también */
   background-color: rgba(255, 255, 255, 0);
-  color:black;/* blanco casi opaco */
+  color:black;
   padding: 20px;
   border-radius: 8px;
 }
 
 .user-btn {
-  color: #198754; /* verde bootstrap */
+  color: #198754; 
   background: transparent;
   border: none;
   box-shadow: none;
@@ -202,39 +178,29 @@
 .dropdown-menu a.dropdown-item:hover,
 .dropdown-menu a.dropdown-item:focus,
 .dropdown-menu a.dropdown-item:active {
-  color: #198754 !important; /* verde */
-  background-color: transparent !important; /* sin fondo azul */
-  box-shadow: none !important;
-  outline: none !important;
+  color: #198754 ; 
+  background-color: transparent ;
+  box-shadow: none ;
+  outline: none ;
 }
-
-.is-invalid {
-  border: 2px solid red !important;
-}
-
 
 .educacion-cachorros {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-              url('fondo-cachorros.jpg') no-repeat center center/cover;
+              url('Educan/assets/imaenes/alpha.jpg') no-repeat center center/cover;
   min-height: 80vh;
 }
 
 .fondo-translucido {
   background-color: rgba(0, 0, 0, 0.5);}
 
-
-
-/*estilos del admin*/
-/* Reset general */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/*fondo de cada pagina*/
 
 body.index {
-  background-image: url('assets/NEO.jpg');
+  background-image: url('/EduCan/assets/imagenes/neo.jpg');
   background-color: rgb(255, 255, 255);
   background-size: cover;
   background-position: center;
@@ -255,10 +221,9 @@ body.index {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffffff35; /* capa blanca translúcida */
+  background-color: #ffffff35;
   z-index: -1;
 }
-
 
 body.servicios {
   background-image: url('assets/Athena.jpg');
@@ -269,9 +234,8 @@ body.servicios {
   padding: 20px 0;
 }
 
-
 body.usuariosA  {
-  background-image: url('assets/lobo.jpg');
+  background-image: url('Educan/assets/imagenes/lobo.jpg');
   font-family: 'Fredoka', sans-serif;
   display: flex;
   min-height: 100vh;
@@ -281,7 +245,7 @@ body.usuariosA  {
 }
 
 body.serviciosA   {
-  background-image: url('assets/PerroBlanco.jpg');
+  background-image: url('/EduCan/assets/imagenes/perroBlanco.jpg');
   font-family: 'Fredoka', sans-serif;
   display: flex;
   min-height: 100vh;
@@ -291,7 +255,7 @@ body.serviciosA   {
 }
 
 body.productosA  {
-  background-image: url('assets/Pitbull.jpg');
+  background-image: url('/EduCan/assets/imagenes/pitbull.jpg');
   font-family: 'Fredoka', sans-serif;
   display: flex;
   min-height: 100vh;
@@ -301,7 +265,7 @@ body.productosA  {
 }
 
 body.contactosA  {
-  background-image: url('assets/Wendy.jpg');
+  background-image: url('/EduCan/assets/imagenes/wendy.jpg');
   font-family: 'Fredoka', sans-serif;
   display: flex;
   min-height: 100vh;
@@ -311,7 +275,7 @@ body.contactosA  {
 }
 
 body.blogA   {
-  background-image: url('assets/Alpha.jpg');
+  background-image: url('/EduCan/assets/imagenes/alpha.jpg');
   font-family: 'Fredoka', sans-serif;
   display: flex;
   min-height: 100vh;
@@ -321,7 +285,7 @@ body.blogA   {
 }
 
 body.configuracionA  {
-  background-image: url('assets/Athena.jpg');
+  background-image: url('/EduCan/assets/imagenes/athena.jpg');
   font-family: 'Fredoka', sans-serif;
   display: flex;
   min-height: 100vh;
@@ -331,7 +295,7 @@ body.configuracionA  {
 }
 
 body.seguridadA { 
-  background-image: url('assets/collie.jpg');
+  background-image: url('/EduCan/assets/imagenes/collie.jpg');
   font-family: 'Fredoka', sans-serif;
   display: flex;
   min-height: 100vh;
@@ -340,7 +304,7 @@ body.seguridadA {
   background-repeat: no-repeat; }
   
 body.inicioA {
-   background-image: url('assets/perronegro.jpg');
+   background-image: url('/EduCan/assets/imagenes/perroNegro.jpg');
    font-family: 'Fredoka', sans-serif;
   display: flex;
   min-height: 100vh;
@@ -349,7 +313,6 @@ body.inicioA {
   background-repeat: no-repeat;
  }
 
-/* Sidebar */
 .sidebar {
   width: 260px;
   background: #cedcd9b4;
@@ -385,7 +348,6 @@ body.inicioA {
   transform: scale(1.05);
 }
 
-/* Main */
 .main {
   flex: 1;
   padding: 32px;
@@ -393,13 +355,11 @@ body.inicioA {
   animation: slideIn 0.6s ease-in-out;
 }
 
-/* Animación */
 @keyframes slideIn {
   from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -422,15 +382,11 @@ body.inicioA {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Cards */
-.cards {
+.card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
   margin-bottom: 40px;
-}
-
-.card {
   background: #6585b4a6;
   padding: 24px;
   border-radius: 18px;
@@ -457,7 +413,6 @@ body.inicioA {
   color: #ffffff;
 }
 
-/* Forms */
 form {
   background: #6585b4a6;
   padding: 28px;
@@ -482,7 +437,7 @@ form select {
   width: 100%;
   padding: 14px;
   margin-bottom: 16px;
-  border: 2px solid #5e3131; /* borde del campo*/
+  border: 2px solid #5e3131; 
   border-radius: 14px;
   font-size: 16px;
   transition: all 0.3s;
@@ -491,7 +446,7 @@ form select {
 form input:focus,
 form textarea:focus,
 form select:focus {
-  border-color: #cedcd9;  /* borde al pararse en el campo*/
+  border-color: #cedcd9;  
   outline: none;
 }
 
@@ -515,7 +470,6 @@ form button:hover {
   transform: scale(1.05);
 }
 
-/* Seguridad avanzada */
 .opciones-seguridad {
   background: #6585b4a6;
   padding: 24px;
@@ -548,7 +502,6 @@ form button:hover {
   gap: 10px;
 }
 
-/* Alertas y feedback */
 .alerta {
   padding: 16px;
   border-radius: 12px;
@@ -570,16 +523,10 @@ form button:hover {
   border-color: #f5c6cb;
 }
 
-
-
-
-
-/* Estilo general de fondo */
 body {
   background-color: #f7f7f7;
 }
 
-/* Sección Hero */
 .hero-tienda {
   position: relative;
   border-radius: 25px;
@@ -614,7 +561,6 @@ body {
   text-shadow: 2px 2px 4px black;
 }
 
-/* Botón personalizado */
 .btn-orange {
   background-color: #d87800;
   color: white;
@@ -627,11 +573,6 @@ body {
 .btn-orange:hover {
   background-color: #a75800;
   color: white;
-}
-
-/* Tarjetas de producto */
-.card {
-  border-radius: 15px;
 }
 
 .card img {
