@@ -12,7 +12,7 @@
 
 
   <div class="sidebar">
-    <img src="assets/EDUCÁN (3).png" alt="Logo EduCan" style="height:200px; margin-right:10px; border-radius: 0px;">
+    <img src="/EduCan/assets/imagenes/educan.png" alt="Logo EduCan" style="height:200px; margin-right:10px; border-radius: 0px;">
   <h2>
   Admin EduCan
 </h2>
@@ -32,12 +32,10 @@
       <h1><i class="bi bi-gear-fill"></i> Panel de Configuración</h1>
     </div>
 
-    <!-- Mensaje de éxito -->
     <div id="alertaExito" class="alert alert-success d-none" role="alert">
       <i class="bi bi-check-circle-fill"></i> Cambios guardados correctamente.
     </div>
 
-    <!-- Perfil del Administrador -->
     <form onsubmit="mostrarAlerta(event)">
       <h2><i class="bi bi-person-circle"></i> Perfil del Administrador</h2>
       <input type="text" placeholder="Nombre completo" value="Admin Principal" required />
@@ -46,7 +44,6 @@
       <button type="submit"><i class="bi bi-person-check-fill"></i> Actualizar perfil</button>
     </form>
 
-    <!-- Preferencias del sistema -->
     <form onsubmit="mostrarAlerta(event)">
       <h2><i class="bi bi-sliders"></i> Preferencias del Sistema</h2>
       <label for="tema">Tema:</label>
@@ -70,7 +67,6 @@
       <button type="submit"><i class="bi bi-save2-fill"></i> Guardar configuración</button>
     </form>
 
-    <!-- Formulario para cambiar contraseña -->
 <form onsubmit="mostrarAlerta('seguridad-alert'); return false;">
   <h2><i class="bi bi-shield-lock-fill"></i> Cambiar Contraseña</h2>
   <input type="password" placeholder="Contraseña actual" required />
@@ -83,8 +79,6 @@
   Contraseña actualizada correctamente.
 </div>
 
-<!-- Opciones adicionales -->
-<!-- Opciones adicionales -->
 <div class="opciones-seguridad mt-5">
   <h3><i class="bi bi-fingerprint"></i> Opciones de Seguridad Adicional</h3>
   <ul>
@@ -93,8 +87,6 @@
     <li><i class="bi bi-person-lock"></i> Gestionar dispositivos conectados</li>
   </ul>
 </div>
-
-
 
   </div>
 
